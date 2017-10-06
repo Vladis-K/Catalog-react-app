@@ -3,7 +3,6 @@
 #Webstorm files
 .idea/
 
-
 # dependencies
 /node_modules
 

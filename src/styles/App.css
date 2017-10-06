@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.all-info{
+    display: flex;
+}
+.t-rows{
+    border-top: 1px solid #696969;
+}
+.t-row{
+    border-bottom: 1px solid #696969;
+    white-space: nowrap;
+}
+form{
+    width: 150px;
+}
+.item{
+    display: inline-block;
+    width: 120px;
+    margin: 5px 10px;
+}
+.item-choice{
+    display: inline-block;
+    text-align: center;
+    width: 40px;
+    margin: 5px 10px;
+}
+.item-price{
+    width: 40px;
+}
+
+.top-title{
+    cursor: pointer;
+}

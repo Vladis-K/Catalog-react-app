@@ -2,14 +2,14 @@
     unicode-bidi: bidi-override;
     color: #c5c5c5;
     font-size: 16px;
-    height: 16px;
     width: 80px;
     position: relative;
     padding: 0;
+    height: 100%;
 }
 
 .star-ratings-top {
-    color: #e7711b;
+    color: #ff9b45;
     padding: 0;
     position: absolute;
     z-index: 1;

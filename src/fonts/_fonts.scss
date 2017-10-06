@@ -1,0 +1,21 @@
+@import url( 'https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700');
+
+/* Nunito */
+$fontNunito: 'Nunito Sans', sans-serif;
+
+@mixin nunitoLight() {
+    font-family: $fontNunito;
+    font-weight: 300;
+}
+
+@mixin nunitoRegular() {
+    font-family: $fontNunito;
+    font-weight: 400;
+}
+
+@mixin nunitoBold() {
+    font-family: $fontNunito;
+    font-weight: 600;
+}
+
+

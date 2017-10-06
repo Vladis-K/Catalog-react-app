@@ -51,16 +51,16 @@ class Catalog extends Component {
             <div className="all-info">
                 <form>
                     <p><label>
-                        <input name="phone" type="checkbox" checked={this.props.deviceName} onChange={this.handleDeviceChange}/>
-                        phone</label>
+                        <input name="laptop" type="checkbox" checked={this.props.deviceName} onChange={this.handleDeviceChange}/>
+                        Laptops</label>
                     </p>
                     <p><label>
                         <input name="tablet" type="checkbox" checked={this.props.deviceName} onChange={this.handleDeviceChange}/>
-                        tablet</label>
+                        Tablets</label>
                     </p>
                     <p><label>
-                        <input name="laptop" type="checkbox" checked={this.props.deviceName} onChange={this.handleDeviceChange}/>
-                        laptop</label>
+                        <input name="phone" type="checkbox" checked={this.props.deviceName} onChange={this.handleDeviceChange}/>
+                        Mobile phones</label>
                     </p>
                 </form>
                 <CatalogList
@@ -82,13 +82,10 @@ class DeviceRow extends Component {
         return (
             <div className="t-row">
                 <span className="item-choice"><input type="checkbox" /></span>
-                <span className="item">{catalog.name}</span>
-                <span className="item">
+                <span className="item item-name">{catalog.name}</span>
+                <span className="item item-rating">
             <Stars rating={catalog.rating}/>
-          </span>
-                <span className="item item-price">
-            <span className="currency-USD">$</span>{catalog.price}
-          </span>
+          </span><span className="item item-price">{catalog.price}</span>
             </div>
         );
     }
@@ -159,14 +156,14 @@ class CatalogList extends Component {
         }
         return (
             <div className="item-content">
-                <div>
-                    <span className="top-title item-choice">---</span>
-                    <span onClick={() => this.sort('name')}
-                          className="top-title item">Name</span>
-                    <span onClick={() => this.sort('rating')}
-                          className="top-title item">Rating</span>
-                    <span onClick={() => this.sort('price')}
-                          className="top-title item item-price">Price</span>
+                <div className="item-content__title">
+                    <div className="item-choice">-</div>
+                    <div onClick={() => this.sort('name')}
+                          className="top-title item item-name"><span>Product name</span></div>
+                    <div onClick={() => this.sort('rating')}
+                          className="top-title item item-rating"><span>Rating</span></div>
+                    <div onClick={() => this.sort('price')}
+                          className="top-title item item-price"><span>Price</span></div>
                 </div>
                 <div className="t-rows">{content}</div>
             </div>

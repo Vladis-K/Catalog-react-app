@@ -66,6 +66,13 @@ form{
   font-size: 13px;
   color: #96a19f !important;
   cursor: pointer;
+  & > span {
+    transition: all .2s linear;
+    &:hover{
+      opacity: .5;
+      transition: all .2s linear;
+    }
+  }
 }
 
 .item-name{
@@ -86,6 +93,7 @@ form{
 label {
   padding-left: 10px;
   color: #706fab;
+  cursor: pointer;
 }
 
 input[type='checkbox'] {

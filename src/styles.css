@@ -56,6 +56,11 @@ form {
   font-size: 13px;
   color: #96a19f !important;
   cursor: pointer; }
+  .top-title > span {
+    transition: all .2s linear; }
+    .top-title > span:hover {
+      opacity: .5;
+      transition: all .2s linear; }
 
 .item-name {
   border-left: 1px solid #9ca5b6;
@@ -73,7 +78,8 @@ form {
 
 label {
   padding-left: 10px;
-  color: #706fab; }
+  color: #706fab;
+  cursor: pointer; }
 
 input[type='checkbox'] {
   margin-top: -30px; }
